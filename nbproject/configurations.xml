@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="crc">
+        <in>crc16_t10dif.c</in>
+        <in>crc16_t10dif_perf.c</in>
+        <in>crc16_t10dif_test.c</in>
+        <in>crc32_gzip_refl.c</in>
+        <in>crc32_gzip_refl_perf.c</in>
+        <in>crc32_gzip_refl_test.c</in>
+        <in>crc32_ieee.c</in>
+        <in>crc32_ieee_perf.c</in>
+        <in>crc32_ieee_test.c</in>
+        <in>crc32_iscsi.c</in>
+        <in>crc32_iscsi_perf.c</in>
+        <in>crc32_iscsi_test.c</in>
+        <in>crc64_base.c</in>
+        <in>crc64_ecma_norm.c</in>
+        <in>crc64_ecma_refl.c</in>
+        <in>crc64_example.c</in>
+        <in>crc64_funcs_perf.c</in>
+        <in>crc64_funcs_test.c</in>
+        <in>crc64_iso_norm.c</in>
+        <in>crc64_iso_refl.c</in>
+        <in>crc64_jones_norm.c</in>
+        <in>crc64_jones_refl.c</in>
+        <in>crc_base.c</in>
+        <in>crc_simple_test.c</in>
+      </df>
+      <df name="erasure_code">
+        <in>ec_base.c</in>
+        <in>ec_base.h</in>
+        <in>ec_encode_data.c</in>
+        <in>ec_encode_data_update.c</in>
+        <in>ec_highlevel_func.c</in>
+        <in>erasure_code_base_perf.c</in>
+        <in>erasure_code_base_test.c</in>
+        <in>erasure_code_perf.c</in>
+        <in>erasure_code_test.c</in>
+        <in>erasure_code_update_perf.c</in>
+        <in>erasure_code_update_test.c</in>
+        <in>gen_rs_matrix_limits.c</in>
+        <in>gf_2vect_dot_prod_perf.c</in>
+        <in>gf_2vect_dot_prod_test.c</in>
+        <in>gf_3vect_dot_prod_perf.c</in>
+        <in>gf_3vect_dot_prod_test.c</in>
+        <in>gf_4vect_dot_prod_perf.c</in>
+        <in>gf_4vect_dot_prod_test.c</in>
+        <in>gf_5vect_dot_prod_perf.c</in>
+        <in>gf_5vect_dot_prod_test.c</in>
+        <in>gf_6vect_dot_prod_perf.c</in>
+        <in>gf_6vect_dot_prod_test.c</in>
+        <in>gf_inverse_test.c</in>
+        <in>gf_vect_dot_prod.c</in>
+        <in>gf_vect_dot_prod_1tbl.c</in>
+        <in>gf_vect_dot_prod_base_test.c</in>
+        <in>gf_vect_dot_prod_perf.c</in>
+        <in>gf_vect_dot_prod_test.c</in>
+        <in>gf_vect_mad.c</in>
+        <in>gf_vect_mad_perf.c</in>
+        <in>gf_vect_mad_test.c</in>
+        <in>gf_vect_mul.c</in>
+        <in>gf_vect_mul_base_test.c</in>
+        <in>gf_vect_mul_perf.c</in>
+        <in>gf_vect_mul_test.c</in>
+      </df>
+      <df name="igzip">
+        <in>checksum32_funcs_test.c</in>
+        <in>crc32_gzip.c</in>
+        <in>crc32_gzip_base.c</in>
+        <in>decode_huffman_code_block_stateless.c</in>
+        <in>encode_deflate_icf.c</in>
+        <in>encode_df.c</in>
+        <in>flatten_ll.c</in>
+        <in>generate_custom_hufftables.c</in>
+        <in>huff_codes.c</in>
+        <in>hufftables_c.c</in>
+        <in>igzip.c</in>
+        <in>igzip_base.c</in>
+        <in>igzip_build_hash_table_perf.c</in>
+        <in>igzip_example.c</in>
+        <in>igzip_file_perf.c</in>
+        <in>igzip_fuzz_inflate.c</in>
+        <in>igzip_hist_perf.c</in>
+        <in>igzip_icf_base.c</in>
+        <in>igzip_inflate.c</in>
+        <in>igzip_inflate_perf.c</in>
+        <in>igzip_inflate_test.c</in>
+        <in>igzip_perf.c</in>
+        <in>igzip_rand_test.c</in>
+        <in>igzip_semi_dyn_file_perf.c</in>
+        <in>igzip_stateless_file_perf.c</in>
+        <in>igzip_sync_flush_example.c</in>
+        <in>igzip_sync_flush_file_perf.c</in>
+        <in>isal_adler32.c</in>
+        <in>isal_deflate_body.c</in>
+        <in>isal_deflate_finish.c</in>
+        <in>isal_deflate_hash_lvl0.c</in>
+        <in>isal_deflate_icf_body.c</in>
+        <in>isal_deflate_icf_finish.c</in>
+        <in>isal_update_histogram.c</in>
+        <in>proc_heap_base.c</in>
+      </df>
+      <df name="raid">
+        <in>pq_check.c</in>
+        <in>pq_check_test.c</in>
+        <in>pq_gen.c</in>
+        <in>pq_gen_perf.c</in>
+        <in>pq_gen_test.c</in>
+        <in>raid_base.c</in>
+        <in>xor_check.c</in>
+        <in>xor_check_test.c</in>
+        <in>xor_example.c</in>
+        <in>xor_gen.c</in>
+        <in>xor_gen_perf.c</in>
+        <in>xor_gen_test.c</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O2"/>
+        <element flagsID="1" commonFlags="-g -O2"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile.unx lib test</buildCommand>
+          <cleanCommand>make -f Makefile.unx  clean</cleanCommand>
+          <executablePath>xor_check_test</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+            </incDir>
+          </cTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="crc/crc16_t10dif.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc16_t10dif_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc16_t10dif_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc32_gzip_refl.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc32_gzip_refl_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc32_gzip_refl_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc32_ieee.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc32_ieee_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc32_ieee_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc32_iscsi.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc32_iscsi_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc32_iscsi_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc64_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc64_ecma_norm.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc64_ecma_refl.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc64_example.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc64_funcs_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc64_funcs_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="crc/crc64_iso_norm.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc64_iso_refl.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc64_jones_norm.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc64_jones_refl.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="crc/crc_simple_test.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/ec_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/ec_base.h" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="erasure_code/ec_encode_data.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/ec_encode_data_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/ec_highlevel_func.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/erasure_code_base_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/erasure_code_base_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/erasure_code_perf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="erasure_code/erasure_code_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/erasure_code_update_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/erasure_code_update_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gen_rs_matrix_limits.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_2vect_dot_prod_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_2vect_dot_prod_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_3vect_dot_prod_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_3vect_dot_prod_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_4vect_dot_prod_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_4vect_dot_prod_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_5vect_dot_prod_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_5vect_dot_prod_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_6vect_dot_prod_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_6vect_dot_prod_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_inverse_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_dot_prod.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_dot_prod_1tbl.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_vect_dot_prod_base_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_dot_prod_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="erasure_code/gf_vect_dot_prod_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_mad.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_mad_perf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="erasure_code/gf_vect_mad_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_mul.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_mul_base_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="erasure_code/gf_vect_mul_perf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="erasure_code/gf_vect_mul_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <folder path="0/crc">
+        <cTool>
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/igzip">
+        <cTool>
+          <incDir>
+            <pElem>raid</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="igzip/checksum32_funcs_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/crc32_gzip.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/crc32_gzip_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/decode_huffman_code_block_stateless.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/encode_deflate_icf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/encode_df.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/flatten_ll.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/generate_custom_hufftables.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/huff_codes.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/hufftables_c.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/igzip.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_build_hash_table_perf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_example.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_file_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_fuzz_inflate.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_hist_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_icf_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_inflate.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_inflate_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_inflate_test.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_rand_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_semi_dyn_file_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_stateless_file_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_sync_flush_example.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/igzip_sync_flush_file_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>igzip</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="igzip/isal_adler32.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/isal_deflate_body.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/isal_deflate_finish.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/isal_deflate_hash_lvl0.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/isal_deflate_icf_body.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/isal_deflate_icf_finish.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/isal_update_histogram.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="igzip/proc_heap_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="raid/pq_check.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="raid/pq_check_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="raid/pq_gen.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="raid/pq_gen_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="raid/pq_gen_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="raid/raid_base.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="raid/xor_check.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="raid/xor_check_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="raid/xor_example.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="raid/xor_gen.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="raid/xor_gen_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="raid/xor_gen_test.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>raid</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

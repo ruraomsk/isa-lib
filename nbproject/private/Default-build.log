@@ -1,0 +1,6 @@
+mkdir -p bin
+  ---> Building raid/raid_base.c  x86_64 
+  ---> Creating Lib bin/isa-l.a
+ar: bin/xor_gen_sse.o: Нет такого файла или каталога
+make.inc:186: ошибка выполнения рецепта для цели «bin/isa-l.a»
+make: *** [bin/isa-l.a] Ошибка 1

@@ -1,0 +1,32 @@
+called: gcc
+	/home/rura/md/NetBeansProjects/lsa-lib
+	gcc
+	-Wall
+	-O2
+	-D
+	NDEBUG
+	-I./
+	-Iraid/
+	-Iinclude/
+	-c
+	-o
+	bin/raid_base.o
+	raid/raid_base.c
+
+called: ar
+	/home/rura/md/NetBeansProjects/lsa-lib
+	ar
+	cr
+	bin/isa-l.a
+	bin/raid_base.o
+	bin/xor_gen_sse.o
+	bin/pq_gen_sse.o
+	bin/xor_check_sse.o
+	bin/pq_check_sse.o
+	bin/pq_gen_avx.o
+	bin/xor_gen_avx.o
+	bin/pq_gen_avx2.o
+	bin/xor_gen_avx512.o
+	bin/pq_gen_avx512.o
+	bin/raid_multibinary.o
+
