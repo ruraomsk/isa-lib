@@ -5,16 +5,25 @@
  */
 #include <limits.h>
 #include <string.h>  // for memset
-#include "erasure_code.h"
 #include "types.h"
+
+extern unsigned char gff_base[];
+extern unsigned char gflog_base[];
 
 void gf_vect_mad(int len, int vec, int vec_i,
         unsigned char *v, unsigned char *src, unsigned char *dest) {
-    int i;
+    int i,ii;
     unsigned char s;
+        unsigned char ss,a,b;
+
     for (i = 0; i < len; i++) {
         s = dest[i];
-        s ^= gf_mul(src[i], v[vec_i * 32 + 1]);
+            a = src[i];
+            b = v[vec_i * 32 + 1];
+            if ((a == 0) || (b == 0)) ss = 0;
+            else ss = gff_base[(ii = gflog_base[a] + gflog_base[b]) > 254 ? ii - 255 : ii];
+
+        s ^= ss;
         dest[i] = s;
     }
 }

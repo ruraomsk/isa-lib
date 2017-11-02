@@ -145,7 +145,7 @@
       <makefileType>
         <makeTool>
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
-          <buildCommand>make -f Makefile.unx lib test</buildCommand>
+          <buildCommand>make -f Makefile.unx lib test perf</buildCommand>
           <cleanCommand>make -f Makefile.unx  clean</cleanCommand>
           <executablePath>xor_check_test</executablePath>
           <cTool>
@@ -433,6 +433,12 @@
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/erasure_code_base_test.c"
             ex="false"
@@ -446,6 +452,12 @@
         </cTool>
       </item>
       <item path="erasure_code/erasure_code_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/erasure_code_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
@@ -459,6 +471,12 @@
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/erasure_code_update_test.c"
             ex="false"
@@ -555,6 +573,12 @@
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_vect_dot_prod_base_test.c"
             ex="false"
@@ -571,6 +595,12 @@
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_vect_dot_prod_test.c"
             ex="false"
@@ -627,6 +657,12 @@
         </cTool>
       </item>
       <item path="erasure_code/gf_vect_mul_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+          <incDir>
+            <pElem>erasure_code</pElem>
+            <pElem>include</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_vect_mul_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
