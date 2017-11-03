@@ -21,27 +21,25 @@
 int xor_check(int vects, int len, void **array) {
     int i, j, fail = 0;
     if (vects < 3) return 1;
-//    if (!(len & 7)) {
-//        // выровнено по 8 байт
-//        UINT64 parity, *pos;
-//        UINT64 *src = (UINT64 **) array;
-//        len = (len >> 8) + 1;
-//        for (i = 0; i < len; i++) {
-//            pos = src++;
-//            parity = 0;
-//            for (j = 0; j < vects; j++) {
-//                parity ^= *pos;
-//                pos += len;
-//            }
-//            if (parity != 0) {
-//                fail = 1;
-//                break;
-//            }
-//        }
-//        if (fail && len > 0)
-//            return len;
-//        return fail;
-//    }
+    if (!(len & (sizeof (unsigned long) - 1))) {
+        // выровнено 
+        unsigned long parity;
+        unsigned long **src = (unsigned long **) array;
+        len = len / sizeof (unsigned long);
+        parity = 0;
+        for (i = 0; i < len; i++) {
+            for (j = 0; j < vects; j++)
+                parity ^= src[j][i];
+            if (parity != 0) {
+                fail = 1;
+                break;
+            }
+        }
+        if (fail && len > 0)
+            return len;
+        return fail;
+    }
+
     unsigned char parity;
     unsigned char **src = (unsigned char **) array;
 

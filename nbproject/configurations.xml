@@ -147,7 +147,7 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>make -f Makefile.unx lib test perf</buildCommand>
           <cleanCommand>make -f Makefile.unx  clean</cleanCommand>
-          <executablePath>xor_check_test</executablePath>
+          <executablePath>xor_gen_test</executablePath>
           <cTool>
             <incDir>
               <pElem>.</pElem>
@@ -1079,13 +1079,13 @@
         </cTool>
       </item>
       <item path="raid/pq_check.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
           <preprocessorList>
-            <Elem>NDEBUG</Elem>
+            <Elem>DEBUG</Elem>
           </preprocessorList>
         </cTool>
       </item>
@@ -1095,24 +1095,31 @@
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/pq_gen.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
           <preprocessorList>
-            <Elem>NDEBUG</Elem>
+            <Elem>DEBUG</Elem>
           </preprocessorList>
         </cTool>
       </item>
       <item path="raid/pq_gen_perf.c" ex="false" tool="0" flavor2="2">
-        <cTool>
+        <cTool flags="1">
           <incDir>
+            <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/pq_gen_test.c" ex="false" tool="0" flavor2="2">
@@ -1121,27 +1128,30 @@
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/raid_base.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
           <preprocessorList>
-            <Elem>NDEBUG</Elem>
+            <Elem>DEBUG</Elem>
           </preprocessorList>
         </cTool>
       </item>
       <item path="raid/xor_check.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
           <preprocessorList>
-            <Elem>NDEBUG</Elem>
+            <Elem>DEBUG</Elem>
           </preprocessorList>
         </cTool>
       </item>
@@ -1151,6 +1161,9 @@
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/xor_example.c" ex="false" tool="0" flavor2="2">
@@ -1161,21 +1174,25 @@
         </cTool>
       </item>
       <item path="raid/xor_gen.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
           <preprocessorList>
-            <Elem>NDEBUG</Elem>
+            <Elem>DEBUG</Elem>
           </preprocessorList>
         </cTool>
       </item>
       <item path="raid/xor_gen_perf.c" ex="false" tool="0" flavor2="2">
-        <cTool>
+        <cTool flags="1">
           <incDir>
+            <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/xor_gen_test.c" ex="false" tool="0" flavor2="2">
@@ -1184,6 +1201,9 @@
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
     </conf>

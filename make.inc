@@ -172,14 +172,7 @@ $(all_tests):
 
 # Target to build lib files
 lib: $(lib_name)
-ifneq ($(lib_debug),1)
- $(lib_name): DEBUG_$(AS)=	# Don't put debug symbols in the lib
- $(lib_name): DEBUG=
- $(lib_name): DEFINES+=-D NDEBUG
-endif
-ifeq ($(lib_debug),1)
  DEBUG+=-D DEBUG   # Define DEBUG for macros
-endif
 
 #lib $(lib_name): $(lib_name)(${objs})
 $(lib_name): $(objs)
