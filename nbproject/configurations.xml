@@ -145,14 +145,9 @@
       <makefileType>
         <makeTool>
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
-          <buildCommand>make -f Makefile.unx lib test perf</buildCommand>
-          <cleanCommand>make -f Makefile.unx  clean</cleanCommand>
+          <buildCommand>make -f Makefile.elb lib test perf</buildCommand>
+          <cleanCommand>make -f Makefile.elb  clean</cleanCommand>
           <executablePath>xor_gen_test</executablePath>
-          <cTool>
-            <incDir>
-              <pElem>.</pElem>
-            </incDir>
-          </cTool>
         </makeTool>
         <preBuild>
           <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
@@ -162,6 +157,10 @@
       <item path="crc/crc16_t10dif.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -173,21 +172,31 @@
       <item path="crc/crc16_t10dif_perf.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc16_t10dif_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+        <cTool>
           <incDir>
-            <pElem>erasure_code</pElem>
+            <pElem>crc</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc32_gzip_refl.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -199,21 +208,31 @@
       <item path="crc/crc32_gzip_refl_perf.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc32_gzip_refl_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+        <cTool>
           <incDir>
-            <pElem>erasure_code</pElem>
+            <pElem>crc</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc32_ieee.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -225,21 +244,31 @@
       <item path="crc/crc32_ieee_perf.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc32_ieee_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+        <cTool>
           <incDir>
-            <pElem>erasure_code</pElem>
+            <pElem>crc</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc32_iscsi.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -251,21 +280,31 @@
       <item path="crc/crc32_iscsi_perf.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc32_iscsi_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+        <cTool>
           <incDir>
-            <pElem>erasure_code</pElem>
+            <pElem>crc</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc64_base.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -277,6 +316,10 @@
       <item path="crc/crc64_ecma_norm.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -288,6 +331,10 @@
       <item path="crc/crc64_ecma_refl.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -299,6 +346,10 @@
       <item path="crc/crc64_example.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
@@ -306,21 +357,31 @@
       <item path="crc/crc64_funcs_perf.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc64_funcs_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+        <cTool>
           <incDir>
-            <pElem>erasure_code</pElem>
+            <pElem>crc</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="crc/crc64_iso_norm.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -332,6 +393,10 @@
       <item path="crc/crc64_iso_refl.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -343,6 +408,10 @@
       <item path="crc/crc64_jones_norm.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -354,6 +423,10 @@
       <item path="crc/crc64_jones_refl.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -365,6 +438,10 @@
       <item path="crc/crc_base.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -376,6 +453,10 @@
       <item path="crc/crc_simple_test.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
+            <pElem>raid</pElem>
+            <pElem>crc</pElem>
+            <pElem>igzip</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
@@ -383,6 +464,7 @@
       <item path="erasure_code/ec_base.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -392,10 +474,16 @@
         </cTool>
       </item>
       <item path="erasure_code/ec_base.h" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/ec_encode_data.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -410,6 +498,7 @@
             flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -421,6 +510,7 @@
       <item path="erasure_code/ec_highlevel_func.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -435,6 +525,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -444,16 +535,19 @@
             ex="false"
             tool="0"
             flavor2="2">
-        <cTool flags="1">
+        <cTool>
           <incDir>
             <pElem>erasure_code</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="erasure_code/erasure_code_perf.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -462,6 +556,7 @@
       <item path="erasure_code/erasure_code_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -473,6 +568,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -484,6 +580,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -493,11 +590,21 @@
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_2vect_dot_prod_perf.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_2vect_dot_prod_test.c"
             ex="false"
@@ -505,6 +612,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -514,45 +622,86 @@
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_3vect_dot_prod_test.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_4vect_dot_prod_perf.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_4vect_dot_prod_test.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_5vect_dot_prod_perf.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_5vect_dot_prod_test.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_6vect_dot_prod_perf.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_6vect_dot_prod_test.c"
             ex="false"
             tool="0"
             flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_inverse_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -561,6 +710,7 @@
       <item path="erasure_code/gf_vect_dot_prod.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -575,6 +725,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -586,6 +737,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -597,6 +749,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -608,6 +761,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -616,6 +770,7 @@
       <item path="erasure_code/gf_vect_mad.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -625,10 +780,16 @@
         </cTool>
       </item>
       <item path="erasure_code/gf_vect_mad_perf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
       </item>
       <item path="erasure_code/gf_vect_mad_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -637,6 +798,7 @@
       <item path="erasure_code/gf_vect_mul.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -651,6 +813,7 @@
             flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -659,6 +822,7 @@
       <item path="erasure_code/gf_vect_mul_perf.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -667,23 +831,16 @@
       <item path="erasure_code/gf_vect_mul_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>erasure_code</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
       </item>
-      <folder path="0/crc">
-        <cTool>
-          <incDir>
-            <pElem>raid</pElem>
-            <pElem>crc</pElem>
-            <pElem>igzip</pElem>
-          </incDir>
-        </cTool>
-      </folder>
       <folder path="0/igzip">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
             <pElem>raid</pElem>
           </incDir>
         </cTool>
@@ -1081,6 +1238,7 @@
       <item path="raid/pq_check.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1089,20 +1247,20 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/pq_check_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+      <item path="raid/pq_check_test.c" ex="false" tool="0" flavor2="1">
+        <cTool>
           <incDir>
             <pElem>raid</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
-          <preprocessorList>
-            <Elem>DEBUG</Elem>
-          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/pq_gen.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1111,31 +1269,30 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/pq_gen_perf.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+      <item path="raid/pq_gen_perf.c" ex="false" tool="0" flavor2="1">
+        <cTool>
           <incDir>
             <pElem>raid</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
-          <preprocessorList>
-            <Elem>DEBUG</Elem>
-          </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/pq_gen_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+      <item path="raid/pq_gen_test.c" ex="false" tool="0" flavor2="1">
+        <cTool>
           <incDir>
             <pElem>raid</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
-          <preprocessorList>
-            <Elem>DEBUG</Elem>
-          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/raid_base.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1147,6 +1304,7 @@
       <item path="raid/xor_check.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1155,20 +1313,20 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/xor_check_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+      <item path="raid/xor_check_test.c" ex="false" tool="0" flavor2="1">
+        <cTool>
           <incDir>
             <pElem>raid</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
-          <preprocessorList>
-            <Elem>DEBUG</Elem>
-          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/xor_example.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
@@ -1176,6 +1334,7 @@
       <item path="raid/xor_gen.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
+            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1184,26 +1343,24 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/xor_gen_perf.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+      <item path="raid/xor_gen_perf.c" ex="false" tool="0" flavor2="1">
+        <cTool>
           <incDir>
             <pElem>raid</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
-          <preprocessorList>
-            <Elem>DEBUG</Elem>
-          </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/xor_gen_test.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="1">
+      <item path="raid/xor_gen_test.c" ex="false" tool="0" flavor2="1">
+        <cTool>
           <incDir>
             <pElem>raid</pElem>
+            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
+            <pElem>.</pElem>
           </incDir>
-          <preprocessorList>
-            <Elem>DEBUG</Elem>
-          </preprocessorList>
         </cTool>
       </item>
     </conf>
