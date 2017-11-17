@@ -6,7 +6,7 @@
 #include "types.h"
 #include <limits.h>
 #include <stdint.h>
-#include<stdio.h>
+#include <stdio.h>
 
 
 int xor_check(int vects, int len, void **array) {
