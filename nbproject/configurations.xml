@@ -145,8 +145,8 @@
       <makefileType>
         <makeTool>
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
-          <buildCommand>make -f Makefile.elb lib test perf</buildCommand>
-          <cleanCommand>make -f Makefile.elb  clean</cleanCommand>
+          <buildCommand>make -f Makefile.unx lib test perf</buildCommand>
+          <cleanCommand>make -f Makefile.unx  clean</cleanCommand>
           <executablePath>xor_gen_test</executablePath>
         </makeTool>
         <preBuild>
@@ -845,6 +845,13 @@
           </incDir>
         </cTool>
       </folder>
+      <folder path="0/raid">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
       <item path="igzip/checksum32_funcs_test.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
@@ -1238,7 +1245,6 @@
       <item path="raid/pq_check.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
-            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1247,20 +1253,20 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/pq_check_test.c" ex="false" tool="0" flavor2="1">
-        <cTool>
+      <item path="raid/pq_check_test.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
-            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
-            <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/pq_gen.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
-            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1269,30 +1275,31 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/pq_gen_perf.c" ex="false" tool="0" flavor2="1">
-        <cTool>
+      <item path="raid/pq_gen_perf.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
-            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
-            <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/pq_gen_test.c" ex="false" tool="0" flavor2="1">
-        <cTool>
+      <item path="raid/pq_gen_test.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
-            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
-            <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/raid_base.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
-            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1304,7 +1311,6 @@
       <item path="raid/xor_check.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
-            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1313,20 +1319,20 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/xor_check_test.c" ex="false" tool="0" flavor2="1">
-        <cTool>
+      <item path="raid/xor_check_test.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
-            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
-            <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="raid/xor_example.c" ex="false" tool="0" flavor2="2">
         <cTool>
           <incDir>
-            <pElem>.</pElem>
             <pElem>include</pElem>
           </incDir>
         </cTool>
@@ -1334,7 +1340,6 @@
       <item path="raid/xor_gen.c" ex="false" tool="0" flavor2="2">
         <cTool flags="1">
           <incDir>
-            <pElem>.</pElem>
             <pElem>raid</pElem>
             <pElem>include</pElem>
           </incDir>
@@ -1343,24 +1348,26 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/xor_gen_perf.c" ex="false" tool="0" flavor2="1">
-        <cTool>
+      <item path="raid/xor_gen_perf.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
-            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
-            <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
-      <item path="raid/xor_gen_test.c" ex="false" tool="0" flavor2="1">
-        <cTool>
+      <item path="raid/xor_gen_test.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
           <incDir>
             <pElem>raid</pElem>
-            <pElem>/opt/mcst/lcc-home/1.21.19/e2k-v4-linux/include</pElem>
             <pElem>include</pElem>
-            <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
         </cTool>
       </item>
     </conf>

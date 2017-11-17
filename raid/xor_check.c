@@ -8,19 +8,10 @@
 #include <stdint.h>
 #include<stdio.h>
 
-#if __WORDSIZE == 64 || _WIN64 || __x86_64__
-#define notbit0 0xfefefefefefefefeULL
-#define bit7    0x8080808080808080ULL
-#define gf8poly 0x1d1d1d1d1d1d1d1dULL
-#else
-#define notbit0 0xfefefefeUL
-#define bit7    0x80808080UL
-#define gf8poly 0x1d1d1d1dUL
-#endif
 
 int xor_check(int vects, int len, void **array) {
     int i, j, fail = 0;
-    if (vects < 3) return 1;
+    if (vects < 3) return -1;
     if (!(len & (sizeof (unsigned long) - 1))) {
         // выровнено 
         unsigned long parity;
@@ -31,12 +22,10 @@ int xor_check(int vects, int len, void **array) {
             for (j = 0; j < vects; j++)
                 parity ^= src[j][i];
             if (parity != 0) {
-                fail = 1;
+                fail = i+1;
                 break;
             }
         }
-        if (fail && len > 0)
-            return len;
         return fail;
     }
 
@@ -49,12 +38,10 @@ int xor_check(int vects, int len, void **array) {
             parity ^= src[j][i];
 
         if (parity != 0) {
-            fail = 1;
+            fail = i+1;
             break;
         }
     }
-    if (fail && len > 0)
-        return len;
     return fail;
 }
 
