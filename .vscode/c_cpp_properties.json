@@ -4,6 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "/usr/include",
+		"../include",
                 "/usr/local/include",
                 "${workspaceRoot}"
             ],
@@ -35,6 +36,7 @@
             "browse": {
                 "path": [
                     "/usr/include",
+		    "../include",
                     "/usr/local/include",
                     "${workspaceRoot}"
                 ],
@@ -61,6 +63,7 @@
             "intelliSenseMode": "msvc-x64",
             "browse": {
                 "path": [
+			"../include",
                     "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/include/*",
                     "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/atlmfc/include/*",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/um",
