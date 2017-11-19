@@ -1,5 +1,4 @@
 {
-    "files.associations": {
-        "types.h": "c"
-    }
+    "includePath": "../include"
+    
 }
