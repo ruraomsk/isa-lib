@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-#include "raid.h"
 
+#include "raid.h"
 #include <limits.h>
 #include <stdint.h>
 
