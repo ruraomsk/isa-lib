@@ -1,4 +1,6 @@
 {
-    "includePath": "../include"
-    
+    "includePath": "../include",
+    "files.associations": {
+        "crc.h": "c"
+    }
 }
