@@ -1,0 +1,4 @@
+  ---> Building Test crc16_t10dif_perf 
+./crc16_t10dif_perf
+crc16_t10dif_perf:
+Start timed tests

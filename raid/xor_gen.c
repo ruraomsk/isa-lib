@@ -28,7 +28,7 @@ int xor_gen(int vects, int len, void **array)
             *pRez++ = *pSrc++;
          for (j = 1; j < vects - 1; j++)
         {
-            pSrc = src[j];
+            pSrc = *(++src);
             pRez = tmp;
             i = len;
             while (i--)
@@ -50,7 +50,7 @@ int xor_gen(int vects, int len, void **array)
 
     for (j = 1; j < vects - 1; j++)
     {
-        pSrc = src[j];
+        pSrc = *(++src);
         pRez = tmp;
         i = len;
         while (i--)
