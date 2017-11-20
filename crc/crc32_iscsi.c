@@ -84,15 +84,14 @@ uint32_t crc32_table_iscsi_base[256] = {
 };
 
 unsigned int crc32_iscsi(unsigned char *buffer, int len, unsigned int crc_init) {
-    unsigned int crc;
-    unsigned char *p_buf;
+    register unsigned int crc;
+    register unsigned char *p_buf=buffer;
 
-    p_buf = (unsigned char *) buffer;
-    unsigned char *p_end = buffer + len;
+    register unsigned char *p_end = buffer + len;
 
     crc = crc_init;
 
-    while (p_buf < (unsigned char *) p_end) {
+    while (p_buf <  p_end) {
         crc = (crc >> 8) ^ crc32_table_iscsi_base[(crc & 0x000000FF) ^ *p_buf++];
     }
     return crc;

@@ -20,15 +20,16 @@
 
 uint64_t crc64_ecma_norm(uint64_t seed, const uint8_t *buf, uint64_t len)
 {
-	uint64_t rem = ~seed;
-	unsigned int i, j;
+	register uint64_t rem = ~seed;
+	register unsigned int  j;
 
-	uint64_t poly = 0x42F0E1EBA9EA3693ULL; // ECMA-182 standard
+	register uint64_t poly = 0x42F0E1EBA9EA3693ULL; // ECMA-182 standard
 
-	for (i = 0; i < len; i++)
+	while( len--)
 	{
-		rem = rem ^ ((uint64_t)buf[i] << 56);
-		for (j = 0; j < MAX_ITER; j++)
+		rem = rem ^ ((uint64_t)*buf++ << 56);
+		j=MAX_ITER;
+		while  (j--)
 		{
 			rem = (rem & 0x8000000000000000ULL ? poly : 0) ^ (rem << 1);
 		}

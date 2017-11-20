@@ -35,12 +35,13 @@ Q[k] = g0D0 + g1D1 + g2D2 + ::: + gN-1DN-1
 
 int pq_gen(int vects, int len, void **array)
 {
-    int i, j;
-    unsigned long p, q, s;
-    unsigned long **src = (unsigned long **)array;
-    int blocks = len / sizeof(long);
     if (vects < 3)
         return -1;
+
+    register int i, j;
+    register unsigned long p, q, s;
+    register unsigned long **src = (unsigned long **)array;
+    register int blocks = len / sizeof(long);
 
     for (i = 0; i < blocks; i++)
     {

@@ -46,7 +46,7 @@ CC  = gcc
 DEBUG      = -g
 
 INCLUDE   = $(patsubst %,-I%/,$(subst :, ,$(VPATH)))
-CFLAGS   = $(CFLAGS_$(arch)) $(CFLAGS_$(CC)) $(DEBUG)   -O2 $(DEFINES) $(INCLUDE)
+CFLAGS   = $(CFLAGS_$(arch)) $(CFLAGS_$(CC)) $(DEBUG)   -O3 $(DEFINES) $(INCLUDE)
 ASFLAGS  = $(ASFLAGS_$(arch))  $(ASFLAGS_$(CC)) $(DEBUG_$(AS)) $(DEFINES) $(INCLUDE)
 ARFLAGS  = rcs
 DEFINES += $(addprefix -D , $D)

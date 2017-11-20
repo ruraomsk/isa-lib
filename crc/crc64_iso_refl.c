@@ -21,14 +21,15 @@
 
 uint64_t crc64_iso_refl(uint64_t seed, const uint8_t * buf, uint64_t len)
 {
-	uint64_t rem = ~seed;
-	unsigned int i, j;
+	register uint64_t rem = ~seed;
+	register int j;
 
-	uint64_t poly = 0xD800000000000000ULL;	// ISO standard reflected
+	register uint64_t poly = 0xD800000000000000ULL;	// ISO standard reflected
 
-	for (i = 0; i < len; i++) {
-		rem = rem ^ (uint64_t) buf[i];
-		for (j = 0; j < MAX_ITER; j++) {
+	while (len--) {
+		rem = rem ^ (uint64_t) *buf++;
+		j=MAX_ITER;
+		while (j--) {
 			rem = (rem & 0x1ULL ? poly : 0) ^ (rem >> 1);
 		}
 	}

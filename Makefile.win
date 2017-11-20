@@ -28,7 +28,7 @@
 ########################################################################
 
 #units     = raid crc igzip erasure_code
-units     = raid
+units     = crc
 
 default: lib
 

@@ -23,16 +23,17 @@ uint32_t crc32_ieee (uint32_t init_crc, const unsigned char *buf, uint64_t len);
 
 uint32_t crc32_ieee(uint32_t seed, const unsigned char *bufer, uint64_t len)
 {
-    uint8_t *buf = (uint8_t *)bufer;
-    uint64_t rem = ~seed;
-    unsigned int i, j;
+    register uint8_t *buf = (uint8_t *)bufer;
+    register uint64_t rem = ~seed;
+    register int j;
 
-    uint32_t poly = 0x04C11DB7; // IEEE standard
+    register uint32_t poly = 0x04C11DB7; // IEEE standard
 
-    for (i = 0; i < len; i++)
+    while (len--)
     {
-        rem = rem ^ (buf[i] << 24);
-        for (j = 0; j < MAX_ITER; j++)
+        rem = rem ^ (*buf++ << 24);
+        j = MAX_ITER;
+        while (j--)
         {
             rem = rem << 1;
             rem = (rem & 0x100000000ULL) ? rem ^ poly : rem;
