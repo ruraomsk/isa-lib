@@ -1,26 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*********************************************************************************
+Библиотека функций быстрого доступа к данным для архитектуры «Эльбрус» («ЭЛЬФ»)
+    Функция вычисления контрольной суммы по стандарту IEEE.
+uint32_t crc32_ieee (uint32_t init_crc, const unsigned char *buf, uint64_t len);
+где:
+	init_crc — начальное значение контрольной суммы для расчета;
+	buf — указатель на массив для которого вычисляется контрольная сумма;
+	len — размер массива в байтах.
+
+Алгоритм. 
+
+Данная функция вычисляет контрольную сумму массива (с добавлением в качестве первого элемента init_crc) 
+нужного типа по стандарту IEEE с использованием полинома - 0x04C11DB7. 
+Контрольная сумма выдаётся в качестве результата функции.
+Необходимо заметить что стандарт CRC IEEE широко используется в HDLC, Ethernet, Gzip и во многих 
+других приложениях (причем в нормальных и рефлексивных видах). 
+Обращаем ваше внимание что реализована только нормальная версия данной циклической контрольной суммы. 
+Рекомендуем применять ее только в рамках задач решаемых данной библиотекой
+**********************************************************************************/
 #include "crc.h"
 #include <stdlib.h>
 #define MAX_ITER 8
 
-uint32_t crc32_ieee(uint32_t seed, const unsigned char *bufer, uint64_t len) {
-    uint8_t *buf = (uint8_t *) bufer;
+uint32_t crc32_ieee(uint32_t seed, const unsigned char *bufer, uint64_t len)
+{
+    uint8_t *buf = (uint8_t *)bufer;
     uint64_t rem = ~seed;
     unsigned int i, j;
 
     uint32_t poly = 0x04C11DB7; // IEEE standard
 
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < len; i++)
+    {
         rem = rem ^ (buf[i] << 24);
-        for (j = 0; j < MAX_ITER; j++) {
+        for (j = 0; j < MAX_ITER; j++)
+        {
             rem = rem << 1;
             rem = (rem & 0x100000000ULL) ? rem ^ poly : rem;
         }
     }
     return ~rem;
 }
-

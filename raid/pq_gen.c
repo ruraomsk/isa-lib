@@ -30,24 +30,28 @@ Q[k] = g0D0 + g1D1 + g2D2 + ::: + gN-1DN-1
 #include <stdint.h>
 
 #define notbit0 0xfefefefefefefefeULL
-#define bit7    0x8080808080808080ULL
+#define bit7 0x8080808080808080ULL
 #define gf8poly 0x1d1d1d1d1d1d1d1dULL
 
-int pq_gen(int vects, int len, void **array) {
+int pq_gen(int vects, int len, void **array)
+{
     int i, j;
     unsigned long p, q, s;
-    unsigned long **src = (unsigned long **) array;
-    int blocks = len / sizeof (long);
-    if (vects < 3) return -1;
+    unsigned long **src = (unsigned long **)array;
+    int blocks = len / sizeof(long);
+    if (vects < 3)
+        return -1;
 
-    for (i = 0; i < blocks; i++) {
+    for (i = 0; i < blocks; i++)
+    {
         q = p = src[vects - 3][i];
 
-        for (j = vects - 4; j >= 0; j--) {
+        for (j = vects - 4; j >= 0; j--)
+        {
             p ^= s = src[j][i];
-            q = s ^ (((q << 1) & notbit0) ^ // shift each byte
-                    ((((q & bit7) << 1) - ((q & bit7) >> 7)) // mask out bytes
-                    & gf8poly)); // apply poly
+            q = s ^ (((q << 1) & notbit0) ^                   // shift each byte
+                     ((((q & bit7) << 1) - ((q & bit7) >> 7)) // mask out bytes
+                      & gf8poly));                            // apply poly
         }
 
         src[vects - 2][i] = p; // second to last pointer is p

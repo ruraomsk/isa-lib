@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*********************************************************************************
+Библиотека функций быстрого доступа к данным для архитектуры «Эльбрус» («ЭЛЬФ»)
+**********************************************************************************/
 #include <stdint.h>
 #include "igzip_checksums.h"
 uint32_t crc32_table_gzip_base[256] = {

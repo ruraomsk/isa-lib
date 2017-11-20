@@ -1,6 +1,7 @@
 {
     "includePath": "../include",
     "files.associations": {
-        "crc.h": "c"
+        "crc.h": "c",
+        "random": "c"
     }
 }
