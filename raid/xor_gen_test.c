@@ -136,7 +136,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		putchar('.');
-		k += 1;
+		k += 32;
 	}
 
 	// Test at the end of buffer

@@ -46,7 +46,7 @@
 // Uncached test.  Pull from large mem base.
 # define TEST_SOURCES 10
 # define GT_L3_CACHE  32*1024*1024	/* some number > last level cache */
-# define TEST_LEN     GT_L3_CACHE / TEST_SOURCES
+# define TEST_LEN     ((GT_L3_CACHE / TEST_SOURCES) & ~(64-1))
 # define TEST_LOOPS   1000
 # define TEST_TYPE_STR "_cold"
 #endif
