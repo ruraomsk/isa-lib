@@ -71,11 +71,11 @@ uint32_t crc32_table_gzip_base[256] = {
 };
 
 uint32_t crc32_gzip(uint32_t crc, const unsigned char *buf, uint64_t len) {
-    uint8_t * start = (uint8_t *) buf;
-    uint8_t *end = start + len;
-    crc = ~crc;
+    register uint8_t * start = (uint8_t *) buf;
+    register uint8_t *end = start + len;
+    register uint32_t rem = ~crc;
     while (start < end)
-        crc = (crc >> 8) ^ crc32_table_gzip_base[(crc & 0xff) ^ *start++];
-    return ~crc;
+        rem = (rem >> 8) ^ crc32_table_gzip_base[(rem & 0xff) ^ *start++];
+    return ~rem;
 }
 

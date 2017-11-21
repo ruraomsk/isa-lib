@@ -2,8 +2,8 @@
 #  Make файл для эльбруса
 ########################################################################
  
-#units     = raid crc igzip erasure_code
-units     = raid
+units     = raid crc igzip erasure_code
+#units     = raid
 
 default: lib
 

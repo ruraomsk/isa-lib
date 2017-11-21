@@ -1,0 +1,118 @@
+  ---> Building Test crc16_t10dif_perf 
+./crc16_t10dif_perf
+crc16_t10dif_perf:
+Start timed tests
+crc16_t10dif_cold: runtime =  329951774 usecs, bandwidth 6400 MB in 329.9518 sec = 20.34 MB/s
+finish 0x46b7
+Completed run: crc16_t10dif_perf
+  ---> Building Test crc32_gzip_refl_perf 
+./crc32_gzip_refl_perf
+crc32_gzip_refl_perf:
+Start timed tests
+crc32_gzip_refl_cold: runtime =  317637725 usecs, bandwidth 6400 MB in 317.6377 sec = 21.13 MB/s
+finish 0xf07cba5
+crc32_gzip_refl_base_perf:
+Start timed tests
+crc32_gzip_refl_base_cold: runtime =    3178393 usecs, bandwidth 128 MB in 3.1784 sec = 42.23 MB/s
+finish 0xf07cba5
+Completed run: crc32_gzip_refl_perf
+  ---> Building Test crc32_ieee_perf 
+./crc32_ieee_perf
+crc32_ieee_perf:
+Start timed tests
+crc32_ieee_cold: runtime =  330458665 usecs, bandwidth 6400 MB in 330.4587 sec = 20.31 MB/s
+finish 0xbc017fd3
+Completed run: crc32_ieee_perf
+  ---> Building Test crc32_iscsi_perf 
+./crc32_iscsi_perf
+crc32_iscsi_perf:
+Start timed tests
+crc32_iscsi_cold: runtime =  325558551 usecs, bandwidth 32000 MB in 325.5586 sec = 103.07 MB/s
+finish 0x691ac64d
+Completed run: crc32_iscsi_perf
+  ---> Building Test crc64_funcs_perf 
+./crc64_funcs_perf
+crc64_ecma_norm_perf:
+Start timed tests
+crc64_ecma_norm_cold: runtime =  279229138 usecs, bandwidth 6400 MB in 279.2291 sec = 24.03 MB/s
+finish 0x6bac2e5a5346c501
+crc64_ecma_refl_perf:
+Start timed tests
+crc64_ecma_refl_cold: runtime =  272973103 usecs, bandwidth 6400 MB in 272.9731 sec = 24.58 MB/s
+finish 0xfeb9c09ceddc7709
+crc64_iso_norm_perf:
+Start timed tests
+crc64_iso_norm_cold: runtime =  279232674 usecs, bandwidth 6400 MB in 279.2327 sec = 24.03 MB/s
+finish 0xd5dbbf54178b9d50
+crc64_iso_refl_perf:
+Start timed tests
+crc64_iso_refl_cold: runtime =  272874701 usecs, bandwidth 6400 MB in 272.8747 sec = 24.59 MB/s
+finish 0x8a6a68173aca1af9
+crc64_jones_norm_perf:
+Start timed tests
+crc64_jones_norm_cold: runtime =  279310438 usecs, bandwidth 6400 MB in 279.3104 sec = 24.03 MB/s
+finish 0x58ddb74159a96536
+crc64_jones_refl_perf:
+Start timed tests
+crc64_jones_refl_cold: runtime =  272933513 usecs, bandwidth 6400 MB in 272.9335 sec = 24.59 MB/s
+finish 0x70895f1709d0773a
+Completed run: crc64_funcs_perf
+  ---> Building Test erasure_code_base_perf 
+./erasure_code_base_perf
+erasure_code_base_perf: 14x2396736 4
+erasure_code_base_encode_cold: runtime =   13630054 usecs, bandwidth 319 MB in 13.6301 sec = 24.62 MB/s
+erasure_code_base_decode_cold: runtime =   13079172 usecs, bandwidth 319 MB in 13.0792 sec = 25.65 MB/s
+done all: Pass
+Completed run: erasure_code_base_perf
+  ---> Building Test erasure_code_perf 
+./erasure_code_perf
+erasure_code_perf: 14x2396736 4
+erasure_code_encode_cold: runtime =  951863731 usecs, bandwidth 22399 MB in 951.8637 sec = 24.68 MB/s
+erasure_code_decode_cold: runtime =  913745251 usecs, bandwidth 22399 MB in 913.7453 sec = 25.71 MB/s
+done all: Pass
+Completed run: erasure_code_perf
+  ---> Building Test erasure_code_update_perf 
+./erasure_code_update_perf
+ec_encode_data_update_perf: 14x2396736 4
+ec_encode_data_update_cold: runtime =  589920211 usecs, bandwidth 22399 MB in 589.9202 sec = 39.82 MB/s
+ec_encode_data_update_single_src_cold: runtime =   54641595 usecs, bandwidth 7999 MB in 54.6416 sec = 153.52 MB/s
+ec_encode_data_update_single_src_simple_cold: runtime =   54597837 usecs, bandwidth 7999 MB in 54.5978 sec = 153.64 MB/s
+ec_encode_data_update_decode_cold: runtime = 1156589194 usecs, bandwidth 22399 MB in 1156.5892 sec = 20.31 MB/s
+done all: Pass
+Completed run: erasure_code_update_perf
+  ---> Building Test gf_vect_dot_prod_1tbl 
+./gf_vect_dot_prod_1tbl
+gf_vect_dot_prod_2tbl_cold: runtime =   10517824 usecs, bandwidth 351 MB in 10.5178 sec = 35.09 MB/s
+gf_vect_dot_prod_1tbl_cold: runtime =     954718 usecs, bandwidth 351 MB in 0.9547 sec = 386.60 MB/s
+Pass functional test
+Completed run: gf_vect_dot_prod_1tbl
+  ---> Building Test gf_vect_dot_prod_perf 
+./gf_vect_dot_prod_perf
+gf_vect_dot_prod: 10x3355392
+gf_vect_dot_prod_cold: runtime =  105229713 usecs, bandwidth 3519 MB in 105.2297 sec = 35.07 MB/s
+pass perf check
+Completed run: gf_vect_dot_prod_perf
+  ---> Building Test gf_vect_mul_perf 
+./gf_vect_mul_perf
+gf_vect_mul_perf:
+Start timed tests
+gf_vect_mul_cold: runtime =  346016764 usecs, bandwidth 16000 MB in 346.0168 sec = 48.49 MB/s
+Completed run: gf_vect_mul_perf
+  ---> Building Test igzip_perf 
+./igzip_perf
+Window Size: 32 K
+igzip_perf: 
+igzip_warm: runtime =    1214073 usecs, bandwidth 400 MB in 1.2141 sec = 345.47 MB/s
+End of igzip_perf
+
+Completed run: igzip_perf
+  ---> Building Test pq_gen_perf 
+./pq_gen_perf
+Test pq_gen_perf 10 sources X 3355392 bytes
+pq_gen_cold: runtime =  122683097 usecs, bandwidth 38399 MB in 122.6831 sec = 328.20 MB/s
+Completed run: pq_gen_perf
+  ---> Building Test xor_gen_perf 
+./xor_gen_perf
+Test xor_gen_perf
+xor_gen_cold: runtime =   84619668 usecs, bandwidth 35199 MB in 84.6197 sec = 436.18 MB/s
+Completed run: xor_gen_perf
