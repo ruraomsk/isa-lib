@@ -25,11 +25,12 @@ P = V1 ^ V2 ^ …^ Vn
 #include <stdint.h>
 
 int xor_gen(int vects, int len, void **array) {
-    register int i, j;
+    register int i;
     if (vects < 3)
         return -1;
     //if ((len % sizeof (unsigned long) )==0) {
         // выровнено
+        register int blocks=vects;
         register unsigned long *pSrc, *pRez, *tmp; //parity;
         register unsigned long **src = (unsigned long **) array;
         len = len / sizeof (unsigned long);
@@ -40,7 +41,8 @@ int xor_gen(int vects, int len, void **array) {
         pRez = tmp;
         while (i--)
             *pRez++ = *pSrc++;
-        for (j = 1; j < vects - 1; j++) {
+        --blocks;
+        while (--blocks) {
             pSrc = *(++src);
             pRez = tmp;
             i = len;
